@@ -5,6 +5,8 @@
     src: url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
 }
 
+/* Element Styles */
+
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -30,15 +32,30 @@ header, footer {
 h1 {
     margin: 0 auto;
     padding: 30px 0 20px 0;
-
 }
+
+h2 {
+    font-size: 1.25rem;
+    margin: 40px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+/* Layout */
 
 .wrapper {
     width:100%;
-}
-
-ul, h1, .bio {
-    padding: 30px 0 20px 0;
 }
 
 ul, img, .bio, h1, .profile-image, .content, .email, .bottom, .application {
@@ -49,21 +66,16 @@ ul, img, .bio, h1, .profile-image, .content, .email, .bottom, .application {
     display: block;
     width: 60%;
 }
-
-ul {
-    list-style: none;
-}
-
-li, h2, .contact, .bottom-left, .bottom-right {
-    text-transform: uppercase;
-}
-
 .header-nav li a {
     display: block;
 }
 
 h1, .contact, li, .right, span, .bottom-left, .bottom-right {
     font-weight: 900;    
+}
+
+li, h2, .contact, .bottom-left, .bottom-right {
+    text-transform: uppercase;
 }
 
 .bottom, .application, .email {
@@ -79,28 +91,18 @@ h1, .contact, li, .right, span, .bottom-left, .bottom-right {
     margin: 10px auto;
 } 
 
-h2 {
-    font-size: 1.25rem;
-    margin: 40px 0;
+ul, h1, .bio {
+    padding: 30px 0 20px 0;
 }
 
 .content-image {
     width: 100%;
 }
 
-h3 {
-    font-size: 1.2rem;
-}
-
-p {
-    line-height: 1.5rem;
-    font-weight: 400;
-}
 .content {
     width: 80%;
     margin-bottom: 40px; 
 }
-
 
 .contact {
     padding-top: 50px;    
@@ -112,8 +114,7 @@ p {
 
 .email {
     border-bottom: solid 1px #a9a9a9;
-    padding-bottom: 30px;
-    
+    padding-bottom: 30px;    
 }
 
 .bottom {
@@ -144,11 +145,18 @@ a:link, a:visited {
     text-decoration: none;
 }
 
+/* Media Queries */
+
 @media (max-width: 767px) {
     
     .header-nav li {
-        background-color: white;
+        background-color: #40E0D0;
         width: 90%;
+        color: white;
+    }
+    
+    .header-nav li a {
+        color: white;
     }
 
     #portfolio {
@@ -170,8 +178,7 @@ a:link, a:visited {
     
     .header-nav li {        
         display: inline-block;
-        margin: 0 40px;
-        
+        margin: 0 40px;     
     }
     
     .bio {
@@ -280,7 +287,7 @@ a:link, a:visited {
     }
     
     .main {
-        background-color: white;
+        background-color: #F8F8FF;
         width: 95%;
         padding-top: 60px;
         padding-bottom: 30px;
