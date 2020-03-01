@@ -147,7 +147,7 @@ a:link, a:visited {
 
 /* Media Queries */
 
-@media (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 499px) {
     
     .header-nav li {
         background-color: #40E0D0;
@@ -157,6 +157,19 @@ a:link, a:visited {
     
     .header-nav li a {
         color: white;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+    
+    .header-nav li {
+        background-color: white;
+        width: 90%;
+        
+    }
+    
+    .header-nav li a {
+        color: #404040;
     }
 
     #portfolio {
